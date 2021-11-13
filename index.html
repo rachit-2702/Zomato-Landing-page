@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img src="images/logo.png" alt="logo" class="brand__logo">
+        </div>
+        <div class="navbar__nav__items">
+          <div class="nav__item">
+            <button class="button__primary" type="button" name="button">Order Now</button>
+            </div>
+        </div>
+      </nav>
+
+    </header>
+
+  <main class="container">
+    <section class="hero__container">
+      <div class="hero__image__container">
+        <img src="images/hero.jpg" alt="hero img" class="hero__image">
+        <img src="images/svg/heroShape.svg" alt="hro image shape" class="hero__image__shape">
+        <img src="images/svg/herobgpattern.svg" alt="hro image pattern" class="hero__image__pattern">
+  </div>
+  <div class="hero__description">
+    <h1 class="text_lg">Order food from favourite restaurants near you.</h1>
+    <button type="button" name="button" class="button__primary">Order Now</button>
+  </div>
+    </section>
+
+    <section class="video__footage__container">
+          <div class="video__footage">
+            <iframe src="https://player.vimeo.com/video/329432140?color=f7f7f7&title=0&byline=0&portrait=0"
+                    width="640"
+                    height="360"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                    class="chef__video">
+            </iframe>
+          </div>
+          <div class="video__footage__text">
+            <p>Your food will be prepared safely with an experienced chef, without compromising on the quality and hygiene.
+            </p>
+          </div>
+    </section>
+
+    <section class="food__list__container">
+      <h1 class="text_lg text__heading">Explore Our Menu</h1>
+
+      <div class="food__list__container__diagonal">
+      </div>
+
+      <div class="food__menu__card__list">
+        <div class="food__menu__card">
+          <img src="images/burger.jpg" alt="burger image" class="food__menu__card__image">
+        <div class="food__menu__card__discription">
+          <h4 class="food__menu__card__title">Burgers</h4>
+          <p class="food__menu__card__restaurants">Burger King, Mcdonalds, Burger Place <span style="color: red;">+3</span></p>
+        </div>
+        </div>
+
+        <div class="food__menu__card food__menu__card__move__up">
+          <img src="images/pizza.jpg" alt="pizza image" class="food__menu__card__image">
+        <div class="food__menu__card__discription">
+          <h4 class="food__menu__card__title">Pizza</h4>
+          <p class="food__menu__card__restaurants">Dominos, Pizza Hut, Oven Story <span style="color: red;">+3</span></p>
+        </div>
+        </div>
+
+        <div class="food__menu__card">
+          <img src="images/icecream.jpg" alt="icecream image" class="food__menu__card__image">
+        <div class="food__menu__card__discription">
+          <h4 class="food__menu__card__title">Ice Cream</h4>
+          <p class="food__menu__card__restaurants">Baskin Robins, Naturals, Havmor <span style="color: red;">+3</span></p>
+        </div>
+        </div>
+      </div>
+    </section>
+<section class="restaurant__list__container">
+  <div class="restaurant__list__text">
+    <h1 class="text__lg">Order from 100s of restaurant</h1>
+  </div>
+  <div class="reataurant__list__image__container">
+    <div class="restaurant__list__row__1">
+      <img src="images/restaurant1.jpg" alt="restaurant1" class="restaurant1">
+      <img src="images/restaurant2.jpg" alt="restaurant2" class="restaurant2">
+
+    </div>
+  <div class="restaurant__list__row__2">
+    <img src="images/restaurant3.jpg" alt="restaurant3" class="restaurant3">
+    <img src="images/restaurant4.jpg" alt="restaurant4" class="restaurant4">
+
+  </div>
+  </div>
+</section>
+
+<!-- <div class="contact">
+  <form class="contact__email__form" action="index.html" method="post">
+    <div class="contact__email">
+      <h1>Stay Updated</h1>
+      <input class="contact__email__form__input"type="email" name="email" value="" placeholder="email@email.com">
+    </div>
+    <div class="contact__email__form__submit">
+      <button class="button__primary contact__email__form__button" type="submit" name="button">Get Updates</button>
+    </div>
+  </form>
+</div> -->
+
+
+<section class="email__subscribe__container">
+        <div>
+          <h1 class="subscribe__text text__lg">Stay Updated</h1>
+          <div class="email__subscribe__input__field">
+            <div>
+              <input
+                type="email"
+                placeholder="email@email.com"
+                class="email__input"
+              />
+            </div>
+            <button class="button__primary">Get Updates</button>
+          </div>
+        </div>
+      </section>
+      <section class="quote__container">
+        <div class="quote_image_overlay"></div>
+        <h3 class="quote_image_text">
+          When a man's stomach is full it makes no difference whether he is rich
+          or poor.
+        </h3>
+      </section>
+    </main>
+    <footer>
+      <img src="images/logo.png" alt="logo" />
+      <ul>
+        <li>Pricing</li>
+        <li>Terms and condition</li>
+        <li>Partnership</li>
+        <li>Career</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+    <script>
+      const hamburgermenu = document.getElementById("hamburgermenu");
+      const mobileNavDropDown = document.querySelector(
+        ".mobile__navbar__items"
+      );
+      window.addEventListener("click", () => {
+        if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+          return mobileNavDropDown.classList.remove("hamburger__menu__close");
+        return mobileNavDropDown.classList.add("hamburger__menu__close");
+      });
+    </script>
+
+</body>
+</html>
